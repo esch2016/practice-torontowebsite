@@ -50,7 +50,7 @@ li {
 	background-repeat: no-repeat;
 	background-position: center top;
 	height: 40vh;
-	background-image: url("https://esch2016.github.io/practice-torontowebsite/toronto-main.jpg");
+	background-image: url("../pictures/toronto-main.jpg");
 }
 .logo span{
 	color: #fff;
@@ -307,7 +307,6 @@ footer{
 			width: 100%;
 			margin: 0 auto;
 		}
-	
 		.main-img{
 			height: 40vh;
 		}
@@ -336,6 +335,7 @@ footer{
 		    width: 80px;
 		    height: auto;
 		    opacity: 0.6;
+		    margin-top: 20px;
 			}
 		.logo span {
 	    font-size: 1em;
@@ -369,4 +369,20 @@ footer{
 }
 .col-75 dd{
 	margin-left: 0;
+}
+.form-flame{
+	padding: 0px;
+}
+.col-25 {
+    width: 40%;
+}
+}
+@media screen and (max-width: 430px){
+
+	.footer-right {
+		font-size: 12px;
+	}
+	.logo img {
+		    margin-top: 20px;
+			}
 }
