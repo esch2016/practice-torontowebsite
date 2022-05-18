@@ -77,7 +77,7 @@ nav ul li a{
 	font-size: 1.4em;
 	padding: 10px;
 }
-nav ul li a:hover{
+nav ul li a:hover, nav ul li a:active {
 	background: rgba(0, 0, 0, 0.4);
 	border-radius: 4px;
 }
@@ -140,9 +140,13 @@ nav ul li a:hover{
 	transition-duration: 1.2s;
 }
 
-.text p:nth-child(3):hover, .text p:nth-child(4):hover, .text a:hover, .text p:nth-child(3):active, .text p:nth-child(4):active, .text a:active{
+.text p:nth-child(3):hover, .text p:nth-child(4):hover, .text a:hover{
 	background-color: pink;
 	/*width: 80%;*/
+	border-radius: 50px;
+}
+.text p:nth-child(3):active, .text p:nth-child(4):active, .text a:active{
+	background-color: pink;
 	border-radius: 50px;
 }
 .text p::before{
@@ -374,7 +378,8 @@ footer{
 	padding: 0px;
 }
 .col-25 {
-    width: 40%;
+    width: 30%;
+    padding: 5px;
 }
 }
 @media screen and (max-width: 430px){
@@ -382,5 +387,4 @@ footer{
 	.footer-right {
 		font-size: 12px;
 	}
-	
 }
