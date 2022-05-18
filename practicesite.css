@@ -50,7 +50,7 @@ li {
 	background-repeat: no-repeat;
 	background-position: center top;
 	height: 40vh;
-	background-image: url("../pictures/toronto-main.jpg");
+	background-image: url("https://esch2016.github.io/practice-torontowebsite/toronto-main.jpg");
 }
 .logo span{
 	color: #fff;
@@ -92,7 +92,7 @@ nav ul li a:hover{
 	padding-bottom: 20px;
 	position: absolute;
 }
-.drop-btn:hover .inner-ul{
+.drop-btn:hover .inner-ul, .drop-btn:active .inner-ul{
 	top: 100%;
 	opacity: 1;
 	visibility: visible;
@@ -140,7 +140,7 @@ nav ul li a:hover{
 	transition-duration: 1.2s;
 }
 
-.text p:nth-child(3):hover, .text p:nth-child(4):hover, .text a:hover{
+.text p:nth-child(3):hover, .text p:nth-child(4):hover, .text a:hover, .text p:nth-child(3):active, .text p:nth-child(4):active, .text a:active{
 	background-color: pink;
 	/*width: 80%;*/
 	border-radius: 50px;
@@ -165,7 +165,7 @@ nav ul li a:hover{
 	/*transition: .8s;
 	filter: grayscale(100%)*/
 }
-.place-img img:hover{
+.place-img img:hover, .place-img img:active{
 	filter: none;
 }
 
