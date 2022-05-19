@@ -15,11 +15,17 @@ $(window).on('load',function(){
 		if(sectionTop-30 < scroll){
 			$('.header, .inner-ul').addClass('headerTwo');
 			$('.logo span').css('display','none');
+
 		}
 		else{
 			$('.header, .inner-ul').removeClass('headerTwo');
 			$('.logo span').css('display','inline-block');
+			$('.hamburger').removeClass('color');
 		}
+
+		if($('.header, .inner-ul').hasClass('headerTwo') && $('.hamburger').hasClass('active') ){
+				$('.hamburger').addClass('color');
+			}
 		
 	});
 
@@ -57,10 +63,11 @@ $('.header nav span').click(function(evt){
 	
 	 if($('.hamburger').hasClass('active')){
 	 	$('.hamburger li').addClass('open');
-
+	 	
 	 }
 	 else{
 	 	$('.hamburger').css('display','none');
+	 	$('.hamburger').removeClass('color');
 	 }
 });
 
