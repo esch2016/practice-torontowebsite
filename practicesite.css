@@ -81,6 +81,26 @@ nav ul li a:hover, nav ul li a:active {
 	background: rgba(0, 0, 0, 0.4);
 	border-radius: 4px;
 }
+/**************** hamburger menu ****************/	
+
+.header nav span{
+	display: none;
+}
+
+.hamburger {
+    font-size: 25px;
+    width: 80%;
+    text-align: right;
+    display: none;
+    position: fixed;
+  }
+.hamburger li a{
+	color: white;
+	opacity: 0.6;
+}
+.hamburger li a:hover{
+	opacity: 1;
+}
 
 .drop-btn .inner-ul{
 	top: 50%;
@@ -306,6 +326,9 @@ footer{
 }
 
 @media screen and (max-width: 630px) {
+		.header{
+			height: 100px;
+		}
 		.place{
 			flex-direction: column;
 			width: 100%;
@@ -381,7 +404,26 @@ footer{
     width: 30%;
     padding: 5px;
 }
+
+/**************** hamburger menu ****************/		
+.header nav span{
+	display: inline-block;
+	font-size: 25px;
 }
+.header nav span a{
+	padding: 10px;
+	color: #7584b2;
+}
+.active{
+	display: block !important;
+}
+.header nav ul{
+	display: none;
+	width: 100%;
+}
+}
+
+
 @media screen and (max-width: 430px){
 
 	.footer-right {
