@@ -89,11 +89,16 @@ nav ul li a:hover, nav ul li a:active {
 
 .hamburger {
     font-size: 25px;
-    width: 80%;
+    top: 100;
+    width: 100%;
     text-align: right;
     display: none;
     position: fixed;
   }
+.color{
+	background-color: rgba(103,148,203,0.7);
+}
+
 .hamburger li a{
 	color: white;
 	opacity: 0.6;
