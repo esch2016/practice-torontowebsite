@@ -14,18 +14,19 @@ $(window).on('load',function(){
 
 		if(sectionTop-30 < scroll){
 			$('.header, .inner-ul').addClass('headerTwo');
-			$('.logo span').css('display','none');
+			$('.logo img').css('display','none');
 
 		}
 		else{
 			$('.header, .inner-ul').removeClass('headerTwo');
-			$('.logo span').css('display','inline-block');
+			$('.logo img').css('display','inline-block');
 			$('.hamburger').removeClass('color');
 		}
 
 		if($('.header, .inner-ul').hasClass('headerTwo') && $('.hamburger').hasClass('active') ){
 				$('.hamburger').addClass('color');
 			}
+
 		
 	});
 
