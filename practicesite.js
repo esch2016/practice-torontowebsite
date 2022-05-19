@@ -31,3 +31,36 @@ $(window).on('load',function(){
 		$('html,body').animate({scrollTop:$(hash).offset().top},800);
 	});
 });
+
+
+/****************     show hamburger menu     ****************/
+
+	// $(window).scroll(function(){
+
+	// 	var pageTop = $(window).scrollTop();
+	// 	const box = $('.colum');
+
+	// 	if(pageTop > 200){
+	// 		box.addClass('action');
+	// 	}
+
+	// });
+
+
+
+/****************     click hamburger menu     ****************/
+
+
+$('.header nav span').click(function(evt){
+	evt.preventDefault();
+	$('.hamburger').toggleClass('active');
+	
+	 if($('.hamburger').hasClass('active')){
+	 	$('.hamburger li').addClass('open');
+
+	 }
+	 else{
+	 	$('.hamburger').css('display','none');
+	 }
+});
+
