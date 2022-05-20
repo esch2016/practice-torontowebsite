@@ -362,7 +362,9 @@ footer{
 		    width: 100%;
 		    height: auto;
 		}
-		
+		.text p:nth-child(3):hover, .text p:nth-child(4):hover, .text a:hover{
+			background-color: white;
+		}
 		.logo{
 			width: 20%;
 		}
