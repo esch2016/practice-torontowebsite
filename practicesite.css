@@ -367,6 +367,7 @@ footer{
 		}
 		.logo{
 			width: 20%;
+			 margin-left: 10px;
 		}
 		.logo img {
 		    width: 80px;
@@ -421,7 +422,7 @@ footer{
 }
 .header nav span a{
 	padding: 10px;
-	color: #7584b2;
+	color: #f7f9ff;
 }
 .active{
 	display: block !important;
