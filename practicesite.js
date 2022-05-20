@@ -40,20 +40,17 @@ $(window).on('load',function(){
 });
 
 
-/****************     show hamburger menu     ****************/
-
-	// $(window).scroll(function(){
-
-	// 	var pageTop = $(window).scrollTop();
-	// 	const box = $('.colum');
-
-	// 	if(pageTop > 200){
-	// 		box.addClass('action');
-	// 	}
-
-	// });
+/****************     tap outside and close nav bar     ****************/
 
 
+$(document).on('click',function(e) {
+   if( !$(e.target).closest('#bar').length && !$(e.target).closest('.hamburger').length) {
+   	// console.log('koko');
+     $('.hamburger').removeClass('active')
+   } 
+});
+
+		
 
 /****************     click hamburger menu     ****************/
 
@@ -71,4 +68,3 @@ $('.header nav span').click(function(evt){
 	 	$('.hamburger').removeClass('color');
 	 }
 });
-
